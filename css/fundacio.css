@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+   
+li a:hover {
+    font-weight: 900;
+}
+   
+ul li {
+    float: left;
+    padding-top: 2ch;
+    padding-left: 4ch;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-weight: 500;
+    float: right;
+    margin-right: 2em;
+}
+
+nav li {
+    list-style: none;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "logo . . idioma"
+        "logo navbar navbar navbar"; 
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo a {
+    float: left;
+    margin-left: 2em;
+    margin-top: 2ch;
+}
+
+.logo img {
+    width: 12vw;
+    height: 8vh;
+}
+
+.idioma {
+    grid-area: idioma;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+.idioma span {
+    float: right;
+
+}
+
+.banner {
+    width: 100vw;
+    height: 30vh;
+    background: rgb(51,92,103);
+    background: linear-gradient(180deg, rgba(51,92,103,1) 0%, rgba(77,11,84,1) 35%, rgba(236,154,91,1) 100%);
+    color: white;
+    text-align: justify;
+}
+
+.banner h2 {
+    padding-bottom: 1ch;
+}
+
+.banner-content {
+    padding: 2.5em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3%;
+    text-align: justify;
+}
+
+.content ul {
+    margin-left: 5%;
+}
+
+.content li {
+    padding-bottom: 0;
+}
+
+.valors {
+    width: 40vw;
+    margin-left: 2%;
+}
+
+.colaboracions {
+    margin-left: 2%;
+}
+
+.colaboracions ul {
+    display: flex;
+    flex-direction: column;
+    color: #4d0b54;
+    font-weight: bold;
+}
+
+.colaboracions p:hover {
+    cursor: pointer;
+    color:#a513b6;
+}
+
+.content h2 {
+    color: #4d0b54;
+    padding-bottom: 1ch;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    width: 38vw;
+    height: 20vh;
+    margin-top: 6%;
+}
+
+.logos img {
+    width: 55%;
+    height: 52%;
+    margin-left: 5%;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    background: #335C67;
+    height: 12vh;
+    color: white;
+    line-height: 1.75rem;
+    font-weight: 600;
+    bottom: 0;
+}
+
+.footer-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.icon {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer li {
+    list-style: none;
+}
+
